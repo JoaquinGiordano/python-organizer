@@ -1,0 +1,26 @@
+[
+    {
+        "to":"./IMAGES",
+        "extensions":["jpg","png","gif","svg","jpeg"]
+    },
+    {
+        "to":"./ISO",
+        "extensions":["iso"]
+    },
+    {
+        "to":"./EXE",
+        "extensions":["exe"]
+    },
+    {
+        "to":"./COMPRESS",
+        "extensions":["zip"]
+    },
+    {
+        "to":"./VIDEOS",
+        "extensions":["mp4","mov","avi"]
+    },
+    {
+        "to":"./AUDIO",
+        "extensions":["mp3","wav","ogg"]
+    }
+]

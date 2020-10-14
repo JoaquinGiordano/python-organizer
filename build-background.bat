@@ -1,0 +1,1 @@
+pyinstaller python-organizer-background.py --noconsole --onefile -n "Python Organizer" --icon="FILE.ico"

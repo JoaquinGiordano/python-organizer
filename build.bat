@@ -1,0 +1,1 @@
+pyinstaller python-organizer.py --onefile -n "Python Organizer" --icon="FILE.ico"
