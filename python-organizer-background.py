@@ -4,15 +4,19 @@ import shutil
 import json
 
 if(os.path.exists('./settings.json') == False):
-    open('./settings.json', 'w').write('{"folderLocation":"./"}')
+   with open('./settings.json', 'w') as settings:
+        settings.write('{"folderLocation":"./"}')
 
 if(os.path.exists('./locations.json') == False):
-    open('./locations.json', 'w').write('[]')
+    with open('./locations.json', 'w') as locations:
+        locations.write('[]')
 
-folderLocation = json.loads(open('./settings.json', 'r').read())['folderLocation']
+with open('./settings.json', 'r') as settings:
+    folderLocation = json.loads(settings.read())['folderLocation']
 
 while (True):
-    locations = json.loads(open('./locations.json', 'r').read())
+    with open('./locations.json', 'r') as locations:
+        locations = json.loads(locations.read())
     files = os.listdir(folderLocation)
     for fileName in files:
     
